@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search keywords</title>
+</head>
+<body>
+    <form action="." method="GET">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit">
+    </form>
+    {{ keywords }}
+    {{ info }}
+</body>
+</html>
